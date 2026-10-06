@@ -1,25 +1,53 @@
 {
   "expo": {
-    "name": "vybe",
+    "name": "VYBE",
     "slug": "vybe",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.vybe.app"
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#0B0B10",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.vybe.app"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-video",
+      "expo-image",
+      "expo-sqlite",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "VYBE uses your camera to record videos.",
+          "microphonePermission": "VYBE uses your microphone to record sound with your videos.",
+          "recordAudioAndroid": true
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "VYBE needs access to your library to upload videos and avatars."
+        }
+      ],
+      "expo-font"
+    ],
+    "scheme": "vybe",
+    "backgroundColor": "#0B0B10",
+    "experiments": {
+      "typedRoutes": true
     }
   }
 }
