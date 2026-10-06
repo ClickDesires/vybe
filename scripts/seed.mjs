@@ -22,7 +22,7 @@ const admin = createClient(url, secret, { auth: { persistSession: false } });
 // Free sample clips. They are downloaded once and re-uploaded to your own storage bucket.
 const SAMPLES = {
   flower: 'https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4',
-  bunny: 'https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/720/Big_Buck_Bunny_720_10s_2MB.mp4',
+  bunny: 'https://download.samplelib.com/mp4/sample-20s.mp4',
   city: 'https://download.samplelib.com/mp4/sample-5s.mp4',
   street: 'https://download.samplelib.com/mp4/sample-10s.mp4',
   ride: 'https://download.samplelib.com/mp4/sample-15s.mp4',
